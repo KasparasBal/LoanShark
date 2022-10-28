@@ -1,0 +1,28 @@
+{
+  "name": "loanshark",
+  "version": "1.0.0",
+  "description": "fictional finance landing page loanshark",
+  "main": "script.js",
+  "scripts": {
+    "watch:scss": "sass --watch scss/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KasparasBal/Project.git"
+  },
+  "keywords": [
+    "fictional",
+    "loanshark",
+    "finance",
+    "landingpage"
+  ],
+  "author": "Kasparas Balys",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KasparasBal/Project/issues"
+  },
+  "homepage": "https://github.com/KasparasBal/Project#readme",
+  "devDependencies": {
+    "sass": "^1.55.0"
+  }
+}

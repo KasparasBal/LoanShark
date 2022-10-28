@@ -1,0 +1,85 @@
+@keyframes squish {
+  0% {
+    width: 4rem;
+  }
+  100% {
+    width: 5rem;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0 35%;
+  }
+
+  20% {
+    background-position: 35% 70%;
+  }
+
+  40% {
+    background-position: 70% 100%;
+  }
+  60% {
+    background-position: 100% 70%;
+  }
+  80% {
+    background-position: 70% 35%;
+  }
+
+  100% {
+    background-position: 35% 0%;
+  }
+}
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes MoveInLeft {
+  0% {
+    transform: translateX(-30rem);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+}
+@keyframes MoveInRight {
+  0% {
+    transform: translateX(30rem);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+}
+@keyframes MoveInBottom {
+  0% {
+    transform: translateY(20rem);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+@keyframes Visibility {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+@keyframes float {
+  0% {
+    transform: translateY(2rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}

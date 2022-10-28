@@ -1,0 +1,158 @@
+.header-container {
+  position: relative;
+}
+.header {
+  width: 100%;
+  height: 75vh;
+  background: linear-gradient(
+    to bottom right,
+    $color-primary-dark-1,
+    $color-primary-dark-1,
+    $color-primary,
+    $color-primary,
+    $color-primary,
+    $color-primary,
+    $color-primary,
+    #0d69a2,
+    #0d69a2,
+    #0d84a2,
+    #0d84a2,
+    $color-primary-dark-1,
+    $color-primary-dark-1,
+    #0d69a2,
+    #0d69a2,
+    #0d84a2,
+    #0d84a2,
+    $color-primary-dark-1,
+    $color-primary-dark-1,
+    $color-primary-dark-1,
+    $color-primary-dark-1
+  );
+  animation: gradient 15s cubic-bezier(0.12, 0, 0.39, 0) infinite alternate;
+  background-size: 600% 600%;
+
+  clip-path: polygon(0 0, 100% 0%, 100% 70%, 0% 100%);
+
+  &__textBlock {
+    color: $color-white;
+    text-transform: uppercase;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    text-shadow: 2px 2px 5px rgba($color-black, 0.4);
+    transform: translateX(-25%) translateY(-25%);
+  }
+  &__heading--primary {
+    font-size: 7.5rem;
+    letter-spacing: 1rem;
+    animation: MoveInLeft 1s ease-out;
+  }
+  &__heading--secondary {
+    font-size: 2.5rem;
+    letter-spacing: 0.75rem;
+    animation: MoveInRight 1s ease-out;
+  }
+  &__card {
+    position: absolute;
+    right: 5%;
+    bottom: 0%;
+    z-index: 1;
+    transition: 3s ease;
+
+    &:hover > &--front {
+      transform: rotateX(-180deg);
+    }
+    &:hover > &--back {
+      transform: rotateX(360deg);
+    }
+
+    &--front {
+      transition: 3s ease;
+      backface-visibility: hidden;
+      perspective: 1000;
+    }
+    &--back {
+      transform: rotateX(180deg);
+      transition: 3s ease;
+      backface-visibility: hidden;
+      position: absolute;
+      perspective: 1000;
+    }
+  }
+  &__image {
+    height: 40rem;
+    filter: drop-shadow(10px 5px 10px rgba($color-black, 0.2));
+    animation: FadeIn 1s ease-out;
+    &--1 {
+      animation: Visibility 1s;
+    }
+  }
+  &__btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 0.25rem;
+    position: absolute;
+    bottom: -100%;
+    left: 14%;
+    color: $color-text;
+    background-color: #fff;
+    border-radius: 2rem;
+    padding: 2rem 3rem;
+    text-shadow: none;
+    box-shadow: 2px 2px 10px rgba($color-black, 0.3);
+    animation: MoveInBottom 1s ease-out;
+  }
+  &__btn:hover {
+    transform: translateY(-0.5rem);
+    transition: ease-in-out 0.3s;
+    box-shadow: 2px 10px 10px 3px rgba($color-black, 0.4);
+  }
+  &__btn:active {
+    transform: translateY(-0.2rem);
+    transition: ease-in-out 0.3s;
+    box-shadow: 2px 6px 6px 3px rgba($color-black, 0.4);
+  }
+  &__btn--logo-container {
+    position: absolute;
+    bottom: -100%;
+    left: 40%;
+    opacity: 0;
+    transform: translateX(2%);
+    display: flex;
+    align-items: flex-start;
+    justify-content: end;
+    transition: ease-in-out 0.3s;
+  }
+  &__btn--logo-container--hovered {
+    position: absolute;
+    bottom: -100%;
+    left: 40%;
+    transform: translateX(2%);
+    display: flex;
+    align-items: flex-start;
+    justify-content: end;
+    transition: ease-in-out 0.3s;
+    opacity: 1;
+    transform: translateY(-135%);
+  }
+  &__btn--logo--clicked {
+    height: 4rem;
+    animation: squish 0.3s ease-in-out forwards;
+    transform: translateX(-20%);
+    filter: drop-shadow(0px 10px 15px $color-black);
+  }
+  &__btn--logo {
+    height: 4rem;
+    transform: translateX(-20%);
+    filter: drop-shadow(0px 5px 20px $color-black);
+  }
+}
+.card-front {
+  backface-visibility: hidden;
+  position: absolute;
+}
+.card-back {
+  backface-visibility: hidden;
+  position: absolute;
+}

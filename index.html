@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="./script.js" defer></script>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Financial app</title>
   </head>
   <body>
     <nav>
       <div class="logo"></div>
     </nav>
-    <div class="header-container">
-      <header class="header">
+    <header class="header-container">
+      <div class="header">
         <div class="header__textBlock">
           <h1 class="header__heading--primary">LoanShark</h1>
           <h3 class="header__heading--secondary">
@@ -27,10 +27,136 @@
             <a href="#" class="header__btn">Explore our plans. </a>
           </div>
         </div>
-      </header>
-      <div class="header__image_container">
-        <img class="header__image" src="./images/card.png" />
+      </div>
+      <div class="header__card">
+        <div class="header__card--back">
+          <img
+            class="header__image header__image--1"
+            src="./images/card-yellow.png"
+          />
+        </div>
+        <div class="header__card--front">
+          <img
+            class="header__image header__image--2"
+            src="./images/card-black.png"
+          />
+        </div>
+      </div>
+    </header>
+    <section class="section__companies">
+      <div class="company-image__container">
+        <img
+          src="images/bbc.png"
+          alt="company template image"
+          class="company-image company-image__1"
+        />
+      </div>
+      <div class="company-image__container">
+        <img
+          src="images/techcrunch.png"
+          alt="company template image"
+          class="company-image company-image__2"
+        />
+      </div>
+      <div class="company-image__container">
+        <img
+          src="images/forbes.png"
+          alt="company template image"
+          class="company-image company-image__3"
+        />
+      </div>
+      <div class="company-image__container">
+        <img
+          src="images/bi.png"
+          alt="company template image"
+          class="company-image company-image__4"
+        />
+      </div>
+    </section>
+    <section class="section__about">
+      <div class="about">
+        <div class="about__gif-container">
+          <img
+            src="/images/budgeting.gif"
+            alt="finance budgeting gif"
+            class="about__gif-image"
+          />
+        </div>
+        <div class="about__description">
+          <span class="about__text">
+            The <span class="text-highlight">safest</span> and <span class="text-highlight"> most efficient </span>
+            way to pay and get paid! Direct integrations with banks, cash app's
+            and even crypto currency. We offer a wide range of services,
+            designed and crafted with the customer in mind.
+            <a href="#" class="link-1">LoanShark</a> is a world wide service
+            that provides <span class="text-highlight"> full payment method support </span> and a range of perks !
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section__plans">
+      <h2 class="heading__secondary">Discover our plans</h2>
+      <div class="plan-cards">
+      <div class="plan-card ">
+        <img src="images/coin-1.png" alt="plan logo" class="plan-card__img">
+        <div class="plan-card__block">
+        <h3 class="plan-card__title">Casual</h3>
+        <p class="plan-card__description">The no worries <br> "subscribe and forget" plan for your essential needs</p>
+      </div>
+      <div class="plan-card__btn">Subscribe</div>
+      </div>
+      <div class="plan-card">
+        <img src="images/coins-2.gif" alt="plan logo" class="plan-card__img">
+        <div class="plan-card__block">
+        <h3 class="plan-card__title">Saving</h3>
+        <p class="plan-card__description">For those who always plan and save big. strategic and well thought out.</p>
+      </div>
+      <div class="plan-card__btn">Subscribe</div>
+      </div>
+      <div class="plan-card">
+        <img src="images/coins-3.gif" alt="plan logo" class="plan-card__img">
+        <div class="plan-card__block">
+        <h3 class="plan-card__title">Business</h3>
+        <p class="plan-card__description">Hassle free world wide transactions, growth support and investement opportunities.</p>
+      </div>
+      <div class="plan-card__btn">Subscribe</div>
       </div>
     </div>
+    </section>
+    <section class="section__form">
+      <h2 class="heading__primary--blue">Intrested in a personal plan?</h2>
+      <button class="subscribe__btn">Contact Us</button>
+    </section>
+    <footer class="footer">
+    <div class="footer__copyright-container">
+      <div class="footer__logo">
+        <img class="footer__logo--image" src="images/shark.png" alt="loanshark logo">
+      </div>
+      <div class="footer__copyright footer__text"> ©LoanShark 2022</div>
+    </div>
+      <div class="footer__company footer__text"><h4 class="footer__text">This is a fictional landing page <br> for Kasparas Balys portfolio</h4></div>
+   
+      <div class="footer__contacts footer__text">
+        <ul class="footer__contacts-list">
+          <li class="footer__contact list__item"><a href="#"><span class="footer__contact-name">Email:</span>LoanShark@madeUp.com</a></li>
+          <li class="footer__contact list__item"><a href="#"><span class="footer__contact-name">Service:</span>+3700000000</a></li>
+          <li class="footer__contact list__item"><a href="#"><span class="footer__contact-name">Address:</span>LITHUANIA</a></li>
+          <li class="footer__contact list__item"><a href="#">Career</a></li>
+        </ul>
+      </div>
+      <div class="footer__countries footer__text">
+        <ul class="footer__country-list">
+          <li class="footer__country list__item">Lithuania</li>
+          <li class="footer__country list__item">USA</li>
+          <li class="footer__country list__item">UK</li>
+          <li class="footer__country list__item">Portugal</li>
+          <li class="footer__country list__item">Spain</li>
+          <li class="footer__country list__item">Netherlands</li>
+          <li class="footer__country list__item">Latvia</li>
+          <li class="footer__country list__item">Estonia</li>
+          <li class="footer__country list__item">Sweden</li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

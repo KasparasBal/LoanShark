@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap");
+.link-1 {
+  text-decoration: none;
+  color: $color-primary;
+  transition: 0.3s ease;
+  &:hover {
+    color: $color-primary-dark-1;
+    padding: 0 1rem;
+  }
+}
+
+.text-highlight {
+  color: $color-primary;
+}
+
+.heading__secondary {
+  position: absolute;
+  top: 8rem;
+  font-size: 4.5rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: $color-white;
+  text-shadow: 2px 2px 5px rgba($color-black, 0.4);
+}
+
+.heading__primary--blue {
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-light-2,
+    $color-primary-dark-1
+  );
+  font-size: 4.5rem;
+  letter-spacing: 3px;
+  padding: 2rem;
+  margin: 4rem 2rem;
+
+  text-transform: uppercase;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.footer__text {
+  text-transform: uppercase;
+  color: rgba($color-primary, 0.9);
+  font-size: 1.3rem;
+  letter-spacing: 1.1px;
+
+  a {
+    text-decoration: none;
+    color: rgba($color-primary, 0.9);
+    transition: all 0.3s;
+    &:hover {
+      color: $color-primary-dark-1;
+    }
+  }
+}
